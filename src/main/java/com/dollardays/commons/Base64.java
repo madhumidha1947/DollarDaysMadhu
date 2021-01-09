@@ -12,12 +12,6 @@ public class Base64 {
 		BaseEncoding.base64().encode(encryptValue.getBytes("UTF-8"));
 
 	}
-
-	public static String giveMyEncryptedPassword(String encryptValue) throws GeneralSecurityException, UnsupportedEncodingException {
-
-		return BaseEncoding.base64().encode(encryptValue.getBytes("UTF-8"));
-		//return new String(test, "UTF-8");
-	}
 	
 	public static String decrypt(String decryptValue) throws GeneralSecurityException, UnsupportedEncodingException {
 
