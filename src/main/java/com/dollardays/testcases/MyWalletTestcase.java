@@ -41,8 +41,7 @@ public class MyWalletTestcase extends BaseTest {
 
 		// Execute the LOGIN TestCase by passing the login credentials via Data Driven Design and getting the TEST DATA From Excel
 		//myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
-		myAddressBookPage.login(datatable.get("UserName"), datatable.get("Password"));		
-		
+		myWalletPage.login(datatable.get("UserName"), datatable.get("Password"));		
 		
 		// You click the SignedIn (Shihka S.) Dropdown to identify the Address Book Link
 		Thread.sleep(1000);
@@ -157,7 +156,7 @@ public class MyWalletTestcase extends BaseTest {
 
 		// Execute the LOGIN TestCase by passing the login credentials via Data Driven Design and getting the TEST DATA From Excel
 		//myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
-		myAddressBookPage.login(datatable.get("UserName"), datatable.get("Password"));		
+		myWalletPage.login(datatable.get("UserName"), datatable.get("Password"));		
 		
 		// You click the SignedIn (Shihka S.) Dropdown to identify the Address Book Link
 		Thread.sleep(1000);
@@ -271,7 +270,7 @@ public class MyWalletTestcase extends BaseTest {
 
 		// Execute the LOGIN TestCase by passing the login credentials via Data Driven Design and getting the TEST DATA From Excel
 		//myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
-		myAddressBookPage.login(datatable.get("UserName"), datatable.get("Password"));		
+		myWalletPage.login(datatable.get("UserName"), datatable.get("Password"));		
 		
 		// You click the SignedIn (Shihka S.) Dropdown to identify the Address Book Link
 		Thread.sleep(1000);
@@ -385,7 +384,7 @@ public class MyWalletTestcase extends BaseTest {
 
 		// Execute the LOGIN TestCase by passing the login credentials via Data Driven Design and getting the TEST DATA From Excel
 		//myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
-		myAddressBookPage.login(datatable.get("UserName"), datatable.get("Password"));		
+		myWalletPage.login(datatable.get("UserName"), datatable.get("Password"));		
 		
 		// You click the SignedIn (Shihka S.) Dropdown to identify the Address Book Link
 		Thread.sleep(1000);
@@ -430,7 +429,8 @@ public class MyWalletTestcase extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Login into DollarDays Website...");
 
 		// Execute the LOGIN TestCase by passing the login credentials via Data Driven Design and getting the TEST DATA From Excel
-		myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
+		//myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
+		myWalletPage.login(datatable.get("UserName"), datatable.get("Password"));
 		
 		// You click the SignedIn (Shihka S.) Dropdown to identify the Address Book Link
 		Thread.sleep(1000);
