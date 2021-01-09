@@ -22,7 +22,7 @@ import com.dollardays.utilities.VideoRecorder_utlity;
 
 public class MyWalletTestcase extends BaseTest {
 
-	/*
+	
 	@DDDataProvider(datafile = "testdata/TestData_AddressBook.xlsx", sheetName = "Sheet3",  testcaseID = "TC_DD_AddressBook_02", runmode = "Yes")
 	@Test(dataProvider = "dd-dataprovider", dataProviderClass = TestUtil.class)
 	public void addWallet(Hashtable<String, String> datatable) throws Exception {	
@@ -248,9 +248,9 @@ public class MyWalletTestcase extends BaseTest {
 	{
 		System.out.println(ex.toString());	
 	}
-  }*/
+  }
 
-	/*@DDDataProvider(datafile = "testdata/TestData_AddressBook.xlsx", sheetName = "Sheet3",  testcaseID = "TC_DD_AddressBook_04", runmode = "Yes")
+	@DDDataProvider(datafile = "testdata/TestData_AddressBook.xlsx", sheetName = "Sheet3",  testcaseID = "TC_DD_AddressBook_04", runmode = "Yes")
 	@Test(dataProvider = "dd-dataprovider", dataProviderClass = TestUtil.class)
 	public void editWallet(Hashtable<String, String> datatable) throws Exception {	
 	try {
@@ -405,9 +405,9 @@ public class MyWalletTestcase extends BaseTest {
 	{
 		System.out.println(ex.toString());	
 	}
-  }*/
+  }
 	
-	
+	/*
 	@DDDataProvider(datafile = "testdata/TestData_AddressBook.xlsx", sheetName = "Sheet3",  testcaseID = "TC_DD_AddressBook_02", runmode = "Yes")
 	@Test(dataProvider = "dd-dataprovider", dataProviderClass = TestUtil.class)
 	public void walletDelete(Hashtable<String, String> datatable) throws Exception {	
@@ -454,5 +454,6 @@ public class MyWalletTestcase extends BaseTest {
 	{
 		System.out.println(ex.toString());	
 	}
-	}
+	}*/
+	
 }
