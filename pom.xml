@@ -16,7 +16,7 @@
 				<configuration>
 				<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
-						<!-- <suiteXmlFile>config\MyAddressBook.xml</suiteXmlFile> -->
+						<suiteXmlFile>config\MyAddressBook.xml</suiteXmlFile>
 						<suiteXmlFile>config\MyWallet.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
