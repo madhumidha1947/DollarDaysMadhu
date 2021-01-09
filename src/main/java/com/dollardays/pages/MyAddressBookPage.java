@@ -50,7 +50,9 @@ public class MyAddressBookPage {
 		return password;
 	}
 
-	@FindBy(xpath = "//button[normalize-space(.)='Sign in']")
+	//@FindBy(xpath = "//button[normalize-space(.)='Sign in']")
+	
+	@FindBy(xpath = "button[contains(text(),'Sign in')]")
 	private WebElement loginBtn;
 
 	public WebElement getLoginBtn() {

@@ -38,8 +38,12 @@ public class MyAddressBookTestCase extends BaseTest{
 		// Execute the LOGIN TestCase by passing the login credentials directly via hard code 
 		//myAddressBookPage.login("srikanthtesting100@gmail.com", "password123");
 		
+		System.out.println("Password Used to Login into DollarDays Website:");
+		System.out.println(datatable.get("Password"));
+		
 		// Execute the LOGIN TestCase by passing the login credentials via Data Driven Design and getting the TEST DATA From Excel
-		myAddressBookPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));		
+		//myAddressBookPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));		
+		myAddressBookPage.login(datatable.get("UserName"), datatable.get("Password"));		
 		
 		Thread.sleep(1000);
 
@@ -70,8 +74,12 @@ public class MyAddressBookTestCase extends BaseTest{
 		// Execute the LOGIN TestCase by passing the login credentials directly via hard code 
 		//myAddressBookPage.login("srikanthtesting100@gmail.com", "password123");
 		
+		System.out.println("Password Used to Login into DollarDays Website:");
+		System.out.println(datatable.get("Password"));
+		
 		// Execute the LOGIN TestCase by passing the login credentials via Data Driven Design and getting the TEST DATA From Excel
-		myAddressBookPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));		
+		//myAddressBookPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));		
+		myAddressBookPage.login(datatable.get("UserName"), datatable.get("Password"));		
 		
 		// You click the SignedIn (Shihka S.) Dropdown to identify the Address Book Link
 		Thread.sleep(1000);
@@ -181,8 +189,12 @@ public class MyAddressBookTestCase extends BaseTest{
 		// Execute the LOGIN TestCase by passing the login credentials directly via hard code 
 		//myAddressBookPage.login("srikanthtesting100@gmail.com", "password123");
 		
+		System.out.println("Password Used to Login into DollarDays Website:");
+		System.out.println(datatable.get("Password"));
+		
 		// Execute the LOGIN TestCase by passing the login credentials via Data Driven Design and getting the TEST DATA From Excel
-		myAddressBookPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));		
+		//myAddressBookPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));		
+		myAddressBookPage.login(datatable.get("UserName"), datatable.get("Password"));		
 		
 		// You click the SignedIn (Shihka S.) Dropdown to identify the Address Book Link
 		Thread.sleep(1000);
