@@ -13,6 +13,7 @@ import com.dollardays.commons.Base64;
 
 public class MyAddressBookPage {
 
+	// Create WebDriver Instance
 	WebDriver driver;
 
 	// This is the constructor for MyAddressBookPage Class
