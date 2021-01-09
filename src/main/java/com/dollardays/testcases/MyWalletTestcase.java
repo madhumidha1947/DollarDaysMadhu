@@ -407,7 +407,7 @@ public class MyWalletTestcase extends BaseTest {
 	}
   }
 	
-	/*
+	
 	@DDDataProvider(datafile = "testdata/TestData_AddressBook.xlsx", sheetName = "Sheet3",  testcaseID = "TC_DD_AddressBook_02", runmode = "Yes")
 	@Test(dataProvider = "dd-dataprovider", dataProviderClass = TestUtil.class)
 	public void walletDelete(Hashtable<String, String> datatable) throws Exception {	
@@ -454,6 +454,6 @@ public class MyWalletTestcase extends BaseTest {
 	{
 		System.out.println(ex.toString());	
 	}
-	}*/
+	}
 	
 }
