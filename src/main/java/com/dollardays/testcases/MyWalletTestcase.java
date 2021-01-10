@@ -23,7 +23,7 @@ import com.dollardays.utilities.VideoRecorder_utlity;
 public class MyWalletTestcase extends BaseTest {
 
 	
-	@DDDataProvider(datafile = "testdata/TestData_AddressBook.xlsx", sheetName = "Sheet3",  testcaseID = "TC_DD_AddressBook_02", runmode = "Yes")
+	@DDDataProvider(datafile = "testdata/TestData_AddressBook.xlsx", sheetName = "Sheet3",  testcaseID = "", runmode = "Yes")
 	@Test(dataProvider = "dd-dataprovider", dataProviderClass = TestUtil.class)
 	public void addWallet(Hashtable<String, String> datatable) throws Exception {	
 	try {
@@ -40,11 +40,13 @@ public class MyWalletTestcase extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Login into DollarDays Website...");
 
 		// Execute the LOGIN TestCase by passing the login credentials via Data Driven Design and getting the TEST DATA From Excel
-		//myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
-		myWalletPage.login(datatable.get("UserName"), datatable.get("Password"));		
+		myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
+		
+		//myWalletPage.login(datatable.get("UserName"), datatable.get("Password"));
 		
 		// You click the SignedIn (Shihka S.) Dropdown to identify the Address Book Link
 		Thread.sleep(1000);
+		
 		ExtentTestManager.getTest().log(Status.INFO, "Step 3: Identify and click the Signed In Dropdown button...");
 		myWalletPage.getSignedInDropdown().click();
 		
@@ -138,7 +140,7 @@ public class MyWalletTestcase extends BaseTest {
 	}
   }
 	
-	@DDDataProvider(datafile = "testdata/TestData_AddressBook.xlsx", sheetName = "Sheet3",  testcaseID = "TC_DD_AddressBook_02", runmode = "Yes")
+	@DDDataProvider(datafile = "testdata/TestData_AddressBook.xlsx", sheetName = "Sheet3",  testcaseID = "", runmode = "Yes")
 	@Test(dataProvider = "dd-dataprovider", dataProviderClass = TestUtil.class)
 	public void cancelWalletAdd(Hashtable<String, String> datatable) throws Exception {	
 	try {
@@ -155,8 +157,9 @@ public class MyWalletTestcase extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Login into DollarDays Website...");
 
 		// Execute the LOGIN TestCase by passing the login credentials via Data Driven Design and getting the TEST DATA From Excel
-		//myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
-		myWalletPage.login(datatable.get("UserName"), datatable.get("Password"));		
+		myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
+		
+		//myWalletPage.login(datatable.get("UserName"), datatable.get("Password"));		
 		
 		// You click the SignedIn (Shihka S.) Dropdown to identify the Address Book Link
 		Thread.sleep(1000);
@@ -252,7 +255,7 @@ public class MyWalletTestcase extends BaseTest {
 	}
   }
 
-	@DDDataProvider(datafile = "testdata/TestData_AddressBook.xlsx", sheetName = "Sheet3",  testcaseID = "TC_DD_AddressBook_04", runmode = "Yes")
+	@DDDataProvider(datafile = "testdata/TestData_AddressBook.xlsx", sheetName = "Sheet3",  testcaseID = "", runmode = "Yes")
 	@Test(dataProvider = "dd-dataprovider", dataProviderClass = TestUtil.class)
 	public void editWallet(Hashtable<String, String> datatable) throws Exception {	
 	try {
@@ -269,8 +272,9 @@ public class MyWalletTestcase extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Login into DollarDays Website...");
 
 		// Execute the LOGIN TestCase by passing the login credentials via Data Driven Design and getting the TEST DATA From Excel
-		//myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
-		myWalletPage.login(datatable.get("UserName"), datatable.get("Password"));		
+		myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
+		
+		//myWalletPage.login(datatable.get("UserName"), datatable.get("Password"));		
 		
 		// You click the SignedIn (Shihka S.) Dropdown to identify the Address Book Link
 		Thread.sleep(1000);
@@ -290,11 +294,13 @@ public class MyWalletTestcase extends BaseTest {
 		//you are passing name in name on card text box
 		Thread.sleep(1000);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 6: Identify and Enter Name for Wallet...");
+		myWalletPage.getNameOnCardTxtBox().clear();
 		myWalletPage.getNameOnCardTxtBox().sendKeys(datatable.get("NameOnCard"));	
 		
 		//you are passing number in card number text box
 		Thread.sleep(1000);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 7: Identify and Enter Card Number for Wallet...");
+		myWalletPage.getCardNumberTxtBox().clear();
 		myWalletPage.getCardNumberTxtBox().sendKeys(datatable.get("CardNumber"));
 		
 		//you are selecting expiration date from drop down box
@@ -322,16 +328,19 @@ public class MyWalletTestcase extends BaseTest {
 		
 		Thread.sleep(1000);		
 		ExtentTestManager.getTest().log(Status.INFO, "Step 11: Select security code for Wallet...");
+		myWalletPage.getSecurityCodeTxtBox().clear();
 	    myWalletPage.getSecurityCodeTxtBox().sendKeys(datatable.get("Security Code"));	
 	    
 	    //you are passing Street Address
   		Thread.sleep(1000);		
 		ExtentTestManager.getTest().log(Status.INFO, "Step 12: Select Street Address for Wallet...");
+		myWalletPage.getStreetAddressTxtBox().clear();
   	    myWalletPage.getStreetAddressTxtBox().sendKeys(datatable.get("Street Address"));	
 	  	    
 	  	//you are passing City			
 		Thread.sleep(1000);		
 		ExtentTestManager.getTest().log(Status.INFO, "Step 13: Select City for Wallet...");
+		myWalletPage.getCityTxtBox().clear();
 	    myWalletPage.getCityTxtBox().sendKeys(datatable.get("City"));	
 	    
 		//you are selecting expiration State from drop down box
@@ -347,6 +356,7 @@ public class MyWalletTestcase extends BaseTest {
 		//you are passing number in Zip code
 		Thread.sleep(1000);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 15: Select Zip code for Wallet...");
+		myWalletPage.getZipCodeTxtBox().clear();
 		myWalletPage.getZipCodeTxtBox().sendKeys(datatable.get("Zip Code"));
 			
 		// select add new card button
@@ -365,7 +375,7 @@ public class MyWalletTestcase extends BaseTest {
 	}
   }
 	
-	
+	/*
 	@DDDataProvider(datafile = "testdata/TestData_AddressBook.xlsx", sheetName = "Sheet3",  testcaseID = "TC_DD_AddressBook_02", runmode = "Yes")
 	@Test(dataProvider = "dd-dataprovider", dataProviderClass = TestUtil.class)
 	public void setAsDefault(Hashtable<String, String> datatable) throws Exception {	
@@ -383,8 +393,9 @@ public class MyWalletTestcase extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Login into DollarDays Website...");
 
 		// Execute the LOGIN TestCase by passing the login credentials via Data Driven Design and getting the TEST DATA From Excel
-		//myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
-		myWalletPage.login(datatable.get("UserName"), datatable.get("Password"));		
+		myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
+		
+		//myWalletPage.login(datatable.get("UserName"), datatable.get("Password"));		
 		
 		// You click the SignedIn (Shihka S.) Dropdown to identify the Address Book Link
 		Thread.sleep(1000);
@@ -410,6 +421,7 @@ public class MyWalletTestcase extends BaseTest {
 		System.out.println(ex.toString());	
 	}
   }
+*/
 	
 /*	
 	@DDDataProvider(datafile = "testdata/TestData_AddressBook.xlsx", sheetName = "Sheet3",  testcaseID = "TC_DD_AddressBook_02", runmode = "Yes")
@@ -429,8 +441,9 @@ public class MyWalletTestcase extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Login into DollarDays Website...");
 
 		// Execute the LOGIN TestCase by passing the login credentials via Data Driven Design and getting the TEST DATA From Excel
-		//myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
-		myWalletPage.login(datatable.get("UserName"), datatable.get("Password"));
+		myWalletPage.login(datatable.get("UserName"), Base64.decrypt(datatable.get("Password")));
+		
+		//myWalletPage.login(datatable.get("UserName"), datatable.get("Password"));
 		
 		// You click the SignedIn (Shihka S.) Dropdown to identify the Address Book Link
 		Thread.sleep(1000);

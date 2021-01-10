@@ -1,40 +1,360 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-06T00:10:16Z" name="Suite" finished-at="2021-01-06T00:11:01Z" duration-ms="44480">
+  <suite started-at="2021-01-10T21:05:36Z" name="Suite" finished-at="2021-01-10T21:15:10Z" duration-ms="574418">
     <groups>
     </groups>
-    <test started-at="2021-01-06T00:10:16Z" name="My Wallet Test Case" finished-at="2021-01-06T00:11:01Z" duration-ms="44480">
-      <class name="com.dollardays.testcases.MyWalletTestcase">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@159f197]" started-at="2021-01-06T00:10:16Z" name="beforeClass" finished-at="2021-01-06T00:10:16Z" duration-ms="31" status="PASS">
+    <test started-at="2021-01-10T21:05:36Z" name="My Address Book Test Case" finished-at="2021-01-10T21:15:10Z" duration-ms="574418">
+      <class name="com.dollardays.testcases.MyAddressBookTestCase">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:05:36Z" name="beforeClass" finished-at="2021-01-10T21:05:36Z" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@159f197]" started-at="2021-01-06T00:10:18Z" name="setUpBrowser" finished-at="2021-01-06T00:10:33Z" duration-ms="15187" status="PASS">
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:05:37Z" name="setUpBrowser" finished-at="2021-01-10T21:05:51Z" duration-ms="13970" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBrowser -->
-        <test-method signature="walletDelete(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@159f197]" started-at="2021-01-06T00:10:33Z" name="walletDelete" data-provider="dd-dataprovider" finished-at="2021-01-06T00:10:57Z" duration-ms="23952" status="PASS">
+        <test-method signature="addressBookCreate(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:05:51Z" name="addressBookCreate" data-provider="dd-dataprovider" finished-at="2021-01-10T21:06:34Z" duration-ms="42478" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Year=2021, Street Address=United States of America, TestCase=Add New Wallet, TCID=TC_DD_AddressBook_02, SheetName=Sheet3, Runmode=Yes, NameOnCard=Madhu De, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, Security Code=345, ExpirationDate=02-February, Zip Code=85286, City=Chandler, State=Arizona, CardNumber=1234567890123456, =}]]>
+                <![CDATA[{StreetAddress=1525 w Lark Dr, Password=cGFzc3dvcmQxMjM=, Country=United States of America, UserName=srikanthtesting100@gmail.com, State=Arizona, Runmode=Yes, Ext=, LastName=Sundar, Apt=, CompanyName=Bridges, FirstName=Madhumidha, TestCase=Verify SignIn Image dropdown and SignIn Link Functionality, ReceivingType=residentialRadioBtn, ZipCode=85286.0, City=Chandler, PhoneNumber=1.234567891E9, TCID=TC_DD_AddressBook_02, SheetName=Sheet2}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- walletDelete -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@159f197]" started-at="2021-01-06T00:10:57Z" name="quit" finished-at="2021-01-06T00:11:01Z" duration-ms="3211" status="PASS">
+        </test-method> <!-- addressBookCreate -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:06:34Z" name="quit" finished-at="2021-01-10T21:06:36Z" duration-ms="1733" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@159f197]" started-at="2021-01-06T00:11:01Z" name="afterClass" finished-at="2021-01-06T00:11:01Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:06:36Z" name="setUpBrowser" finished-at="2021-01-10T21:06:49Z" duration-ms="13250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="addressBookCreate(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:06:49Z" name="addressBookCreate" data-provider="dd-dataprovider" finished-at="2021-01-10T21:07:30Z" duration-ms="41312" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{StreetAddress=1525 w Lark Dr, Password=cGFzc3dvcmQxMjM=, Country=United States of America, UserName=srikanthtesting100@gmail.com, State=Arizona, Runmode=Yes, Ext=, LastName=Sundar, Apt=, CompanyName=Bridges, FirstName=Madhumidha, TestCase=Verify User can Click and Add New Address Book, ReceivingType=residentialRadioBtn, ZipCode=85286.0, City=Chandler, PhoneNumber=1.234567891E9, TCID=TC_DD_AddressBook_03, SheetName=Sheet2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressBookCreate -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:07:30Z" name="quit" finished-at="2021-01-10T21:07:31Z" duration-ms="1268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:07:31Z" name="setUpBrowser" finished-at="2021-01-10T21:07:44Z" duration-ms="12586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="addressBookCreate(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:07:44Z" name="addressBookCreate" data-provider="dd-dataprovider" finished-at="2021-01-10T21:08:24Z" duration-ms="39752" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{StreetAddress=1525 W Lark Dr, Password=cGFzc3dvcmQxMjM=, Country=United States of America, UserName=srikanthtesting100@gmail.com, State=Arizona, Runmode=Yes, Ext=, LastName=Test, Apt=, CompanyName=Bridges, FirstName=Madhumidha, TestCase=Validate if user cannot  add new address book without mandatory fields, ReceivingType=residentialRadioBtn, ZipCode=85286.0, City=Chandler, PhoneNumber=6025541245, TCID=TC_DD_AddressBook_04, SheetName=Sheet2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressBookCreate -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:08:24Z" name="quit" finished-at="2021-01-10T21:08:25Z" duration-ms="1395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:08:25Z" name="setUpBrowser" finished-at="2021-01-10T21:08:38Z" duration-ms="12970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="addressBookCreate(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:08:38Z" name="addressBookCreate" data-provider="dd-dataprovider" finished-at="2021-01-10T21:09:29Z" duration-ms="51140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{StreetAddress=1525 w Lark Dr, Password=cGFzc3dvcmQxMjM=, Country=United States of America, UserName=srikanthtesting100@gmail.com, State=Arizona, Runmode=Yes, Ext=, LastName=Sundar, Apt=, CompanyName=Bridges, FirstName=Madhumidha, TestCase=Verify "Save Changes" button in addressbook.aspx page, ReceivingType=residentialRadioBtn, ZipCode=85286.0, City=Chandler, PhoneNumber=1.234567891E9, TCID=TC_DD_AddressBook_05, SheetName=Sheet2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressBookCreate -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:09:29Z" name="quit" finished-at="2021-01-10T21:09:31Z" duration-ms="1494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:09:31Z" name="setUpBrowser" finished-at="2021-01-10T21:09:46Z" duration-ms="15371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="addressBookCreate(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:09:46Z" name="addressBookCreate" data-provider="dd-dataprovider" finished-at="2021-01-10T21:10:28Z" duration-ms="42181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{StreetAddress=1525 w Lark Dr, Password=cGFzc3dvcmQxMjM=, Country=United States of America, UserName=srikanthtesting100@gmail.com, State=Arizona, Runmode=Yes, Ext=, LastName=Sundar, Apt=, CompanyName=Bridges, FirstName=Madhumidha, TestCase=Verify "Cancel" button in addressbook.aspx page, ReceivingType=residentialRadioBtn, ZipCode=85286.0, City=Chandler, PhoneNumber=1.234567891E9, TCID=TC_DD_AddressBook_06, SheetName=Sheet2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressBookCreate -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:10:28Z" name="quit" finished-at="2021-01-10T21:10:30Z" duration-ms="1417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:10:30Z" name="setUpBrowser" finished-at="2021-01-10T21:10:43Z" duration-ms="12898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="addressBookLastCancel(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:10:43Z" name="addressBookLastCancel" data-provider="dd-dataprovider" finished-at="2021-01-10T21:11:19Z" duration-ms="36143" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{StreetAddress=1525 w Lark Dr, Password=cGFzc3dvcmQxMjM=, Country=United States of America, UserName=srikanthtesting100@gmail.com, State=Arizona, Runmode=Yes, Ext=, LastName=Sundar, Apt=, CompanyName=Bridges, FirstName=Madhumidha, TestCase=Verify SignIn Image dropdown and SignIn Link Functionality, ReceivingType=residentialRadioBtn, ZipCode=85286.0, City=Chandler, PhoneNumber=1.234567891E9, TCID=TC_DD_AddressBook_02, SheetName=Sheet2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressBookLastCancel -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:11:19Z" name="quit" finished-at="2021-01-10T21:11:20Z" duration-ms="1176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:11:20Z" name="setUpBrowser" finished-at="2021-01-10T21:11:33Z" duration-ms="12682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="addressBookLastCancel(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:11:33Z" name="addressBookLastCancel" data-provider="dd-dataprovider" finished-at="2021-01-10T21:12:08Z" duration-ms="35379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{StreetAddress=1525 w Lark Dr, Password=cGFzc3dvcmQxMjM=, Country=United States of America, UserName=srikanthtesting100@gmail.com, State=Arizona, Runmode=Yes, Ext=, LastName=Sundar, Apt=, CompanyName=Bridges, FirstName=Madhumidha, TestCase=Verify User can Click and Add New Address Book, ReceivingType=residentialRadioBtn, ZipCode=85286.0, City=Chandler, PhoneNumber=1.234567891E9, TCID=TC_DD_AddressBook_03, SheetName=Sheet2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressBookLastCancel -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:12:08Z" name="quit" finished-at="2021-01-10T21:12:10Z" duration-ms="1181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:12:10Z" name="setUpBrowser" finished-at="2021-01-10T21:12:22Z" duration-ms="12507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="addressBookLastCancel(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:12:22Z" name="addressBookLastCancel" data-provider="dd-dataprovider" finished-at="2021-01-10T21:13:02Z" duration-ms="40382" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{StreetAddress=1525 W Lark Dr, Password=cGFzc3dvcmQxMjM=, Country=United States of America, UserName=srikanthtesting100@gmail.com, State=Arizona, Runmode=Yes, Ext=, LastName=Test, Apt=, CompanyName=Bridges, FirstName=Madhumidha, TestCase=Validate if user cannot  add new address book without mandatory fields, ReceivingType=residentialRadioBtn, ZipCode=85286.0, City=Chandler, PhoneNumber=6025541245, TCID=TC_DD_AddressBook_04, SheetName=Sheet2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressBookLastCancel -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:13:02Z" name="quit" finished-at="2021-01-10T21:13:04Z" duration-ms="1385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:13:04Z" name="setUpBrowser" finished-at="2021-01-10T21:13:17Z" duration-ms="13412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="addressBookLastCancel(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:13:17Z" name="addressBookLastCancel" data-provider="dd-dataprovider" finished-at="2021-01-10T21:13:54Z" duration-ms="37139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{StreetAddress=1525 w Lark Dr, Password=cGFzc3dvcmQxMjM=, Country=United States of America, UserName=srikanthtesting100@gmail.com, State=Arizona, Runmode=Yes, Ext=, LastName=Sundar, Apt=, CompanyName=Bridges, FirstName=Madhumidha, TestCase=Verify "Save Changes" button in addressbook.aspx page, ReceivingType=residentialRadioBtn, ZipCode=85286.0, City=Chandler, PhoneNumber=1.234567891E9, TCID=TC_DD_AddressBook_05, SheetName=Sheet2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressBookLastCancel -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:13:54Z" name="quit" finished-at="2021-01-10T21:13:55Z" duration-ms="1112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:13:55Z" name="setUpBrowser" finished-at="2021-01-10T21:14:08Z" duration-ms="12309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="addressBookLastCancel(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:14:08Z" name="addressBookLastCancel" data-provider="dd-dataprovider" finished-at="2021-01-10T21:14:45Z" duration-ms="37117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{StreetAddress=1525 w Lark Dr, Password=cGFzc3dvcmQxMjM=, Country=United States of America, UserName=srikanthtesting100@gmail.com, State=Arizona, Runmode=Yes, Ext=, LastName=Sundar, Apt=, CompanyName=Bridges, FirstName=Madhumidha, TestCase=Verify "Cancel" button in addressbook.aspx page, ReceivingType=residentialRadioBtn, ZipCode=85286.0, City=Chandler, PhoneNumber=1.234567891E9, TCID=TC_DD_AddressBook_06, SheetName=Sheet2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressBookLastCancel -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:14:45Z" name="quit" finished-at="2021-01-10T21:14:46Z" duration-ms="1238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:14:46Z" name="setUpBrowser" finished-at="2021-01-10T21:14:59Z" duration-ms="12398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="login(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:14:59Z" name="login" data-provider="dd-dataprovider" finished-at="2021-01-10T21:15:09Z" duration-ms="9863" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Apt=1234.0, TestCase=Valid Login Credentials, Ext=1.0, TCID=TC_DD_AddressBook_01, SheetName=Sheet1, Runmode=Yes, CompanyName=AAAA, PhoneNumber=1.234567891E9, StreetAddress=123 Pecos dr, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, LastName=Sundar, ZipCode=85286.0, City=Chandler, FirstName=Madhu, State=Arizona, Country=United States of America}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:15:09Z" name="quit" finished-at="2021-01-10T21:15:10Z" duration-ms="1555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.dollardays.testcases.MyAddressBookTestCase@12e61fe6]" started-at="2021-01-10T21:15:10Z" name="afterClass" finished-at="2021-01-10T21:15:10Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.dollardays.testcases.MyAddressBookTestCase -->
+    </test> <!-- My Address Book Test Case -->
+  </suite> <!-- Suite -->
+  <suite started-at="2021-01-10T21:15:12Z" name="Suite (0)" finished-at="2021-01-10T21:20:20Z" duration-ms="307702">
+    <groups>
+    </groups>
+    <test started-at="2021-01-10T21:15:12Z" name="My Wallet Test Case" finished-at="2021-01-10T21:20:20Z" duration-ms="307702">
+      <class name="com.dollardays.testcases.MyWalletTestcase">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:15:12Z" name="beforeClass" finished-at="2021-01-10T21:15:12Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:15:12Z" name="setUpBrowser" finished-at="2021-01-10T21:15:25Z" duration-ms="12667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="addWallet(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:15:25Z" name="addWallet" data-provider="dd-dataprovider" finished-at="2021-01-10T21:16:04Z" duration-ms="39497" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Year=2021, Street Address=1234 W Greenwood St, TestCase=Add New Wallet, TCID=TC_DD_AddressBook_07, SheetName=Sheet3, Runmode=Yes, NameOnCard=Madhu Test, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, Security Code=345, ExpirationDate=02-February, Zip Code=85286, City=Chandler, State=Arizona, CardNumber=1234567890123456, =}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addWallet -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:16:04Z" name="quit" finished-at="2021-01-10T21:16:06Z" duration-ms="1366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:16:06Z" name="setUpBrowser" finished-at="2021-01-10T21:16:19Z" duration-ms="13520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="addWallet(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:16:19Z" name="addWallet" data-provider="dd-dataprovider" finished-at="2021-01-10T21:16:57Z" duration-ms="38102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Year=2022, Street Address=1234 W Redwood St, TestCase=Cancel Add New Wallet, TCID=TC_DD_AddressBook_08, SheetName=Sheet3, Runmode=Yes, NameOnCard=Raj Test, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, Security Code=765, ExpirationDate=02-February, Zip Code=85286, City=Phoenix, State=Arizona, CardNumber=2342344323452122, =}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addWallet -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:16:57Z" name="quit" finished-at="2021-01-10T21:16:59Z" duration-ms="1253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:16:59Z" name="setUpBrowser" finished-at="2021-01-10T21:17:12Z" duration-ms="13612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="cancelWalletAdd(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:17:12Z" name="cancelWalletAdd" data-provider="dd-dataprovider" finished-at="2021-01-10T21:17:46Z" duration-ms="34000" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Year=2021, Street Address=1234 W Greenwood St, TestCase=Add New Wallet, TCID=TC_DD_AddressBook_07, SheetName=Sheet3, Runmode=Yes, NameOnCard=Madhu Test, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, Security Code=345, ExpirationDate=02-February, Zip Code=85286, City=Chandler, State=Arizona, CardNumber=1234567890123456, =}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelWalletAdd -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:17:46Z" name="quit" finished-at="2021-01-10T21:17:49Z" duration-ms="2502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:17:49Z" name="setUpBrowser" finished-at="2021-01-10T21:18:02Z" duration-ms="12864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="cancelWalletAdd(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:18:02Z" name="cancelWalletAdd" data-provider="dd-dataprovider" finished-at="2021-01-10T21:18:36Z" duration-ms="33696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Year=2022, Street Address=1234 W Redwood St, TestCase=Cancel Add New Wallet, TCID=TC_DD_AddressBook_08, SheetName=Sheet3, Runmode=Yes, NameOnCard=Raj Test, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, Security Code=765, ExpirationDate=02-February, Zip Code=85286, City=Phoenix, State=Arizona, CardNumber=2342344323452122, =}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelWalletAdd -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:18:36Z" name="quit" finished-at="2021-01-10T21:18:37Z" duration-ms="1424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:18:37Z" name="setUpBrowser" finished-at="2021-01-10T21:18:50Z" duration-ms="12980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="editWallet(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:18:50Z" name="editWallet" data-provider="dd-dataprovider" finished-at="2021-01-10T21:19:28Z" duration-ms="37945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Year=2021, Street Address=1234 W Greenwood St, TestCase=Add New Wallet, TCID=TC_DD_AddressBook_07, SheetName=Sheet3, Runmode=Yes, NameOnCard=Madhu Test, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, Security Code=345, ExpirationDate=02-February, Zip Code=85286, City=Chandler, State=Arizona, CardNumber=1234567890123456, =}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editWallet -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:19:28Z" name="quit" finished-at="2021-01-10T21:19:29Z" duration-ms="1368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:19:29Z" name="setUpBrowser" finished-at="2021-01-10T21:19:42Z" duration-ms="12999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="editWallet(java.util.Hashtable)[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:19:42Z" name="editWallet" data-provider="dd-dataprovider" finished-at="2021-01-10T21:20:17Z" duration-ms="34133" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Year=2022, Street Address=1234 W Redwood St, TestCase=Cancel Add New Wallet, TCID=TC_DD_AddressBook_08, SheetName=Sheet3, Runmode=Yes, NameOnCard=Raj Test, UserName=srikanthtesting100@gmail.com, Password=cGFzc3dvcmQxMjM=, Security Code=765, ExpirationDate=02-February, Zip Code=85286, City=Phoenix, State=Arizona, CardNumber=2342344323452122, =}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editWallet -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:20:17Z" name="quit" finished-at="2021-01-10T21:20:20Z" duration-ms="3161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.dollardays.testcases.MyWalletTestcase@3c22fc4c]" started-at="2021-01-10T21:20:20Z" name="afterClass" finished-at="2021-01-10T21:20:20Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.dollardays.testcases.MyWalletTestcase -->
     </test> <!-- My Wallet Test Case -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Suite (0) -->
 </testng-results>

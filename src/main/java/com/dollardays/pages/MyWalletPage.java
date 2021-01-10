@@ -87,8 +87,8 @@ public class MyWalletPage {
 		return walletBtn;
 		
 	}
-	
-	@FindBy(xpath = "/html[1]/body[1]/form[1]/div[5]/div[1]/section[1]/div[1]/div[3]/div[1]/div[2]/div[1]/section[1]/div[1]/div[1]/a[1]/div[1]/h5[1]")
+		
+	@FindBy(xpath = "//h5[contains(text(),'+ Add a new card')]")
 	private WebElement  addNewCardLink;
 	
 	public WebElement getAddNewCardLink() {
@@ -162,7 +162,7 @@ public class MyWalletPage {
 	public WebElement getZipCodeTxtBox() {
 		return  zipCodeTxtBox;
 	}
-	
+		
 	@FindBy(xpath ="//input[@id='ctl00_cphContent_btnUpdateCard']")
 	private WebElement addNewCardSubmitBtn;
 	
@@ -177,7 +177,7 @@ public class MyWalletPage {
 		return  cancelBtn;
 	}
 	
-	@FindBy(xpath="//body/form[@id='aspnetForm']/div[5]/div[1]/section[1]/div[1]/div[3]/div[1]/div[2]/div[1]/section[1]/div[1]/div[3]/div[1]/div[3]/ul[1]/li[1]/a[1]")
+	@FindBy(xpath="//a[contains(text(),'Edit')]")
 	private WebElement editWalletLink;
 	
 	public WebElement getEditWalletLink() {
